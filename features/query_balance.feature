@@ -31,4 +31,3 @@ Feature: query_balance RCP method against nctl
     Then the balance includes the transferred amount
     When that a query balance is obtained by user-1's main purse public key and previous state root hash identifier
     Then the balance is the pre transfer amount
-
