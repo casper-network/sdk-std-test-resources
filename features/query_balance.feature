@@ -27,7 +27,7 @@ Feature: query_balance RCP method against nctl
 
   Scenario: query_balance by main_purse_under_public_key using a state root hash state identifier
     When a transfer of 2500000000 is made to user-1's purse
-    And that a query balance is obtained by user-1's main purse public and latest state root hash  identifier
+    And that a query balance is obtained by user-1's main purse public and latest state root hash identifier
     Then the balance includes the transferred amount
     When that a query balance is obtained by user-1's main purse public key and previous state root hash identifier
     Then the balance is the pre transfer amount
