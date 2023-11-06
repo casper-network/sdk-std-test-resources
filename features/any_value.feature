@@ -6,6 +6,7 @@ Feature: Any Values
     And the transfer containing the any value is successfully executed
     When the any is read from the deploy
     Then the any value's bytes are "01"
+    And the type of the any is "Bool" with a value of "true"
 
     Given an Any value contains a "ByteArray" value of "d2029649"
     Then the any value's bytes are "d2029649"
